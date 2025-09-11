@@ -1,0 +1,101 @@
+# E-commerce Integration Project
+
+Este proyecto es una aplicación de e-commerce que integra un backend en Django con un frontend en React.
+
+## Requisitos Previos
+
+- Python 3.8 o superior
+- Node.js 14.x o superior
+- npm o yarn
+- Git
+
+## Configuración del Entorno
+
+### 1. Clonar el Repositorio
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd EcomerceInteggracionfinal
+```
+
+### 2. Configuración del Backend (Django)
+
+1. Crear un entorno virtual:
+```bash
+python -m venv .venv
+```
+
+2. Activar el entorno virtual:
+- En Windows:
+```bash
+.venv\Scripts\activate
+```
+
+3. Instalar dependencias del backend:
+```bash
+pip install django
+pip install djangorestframework
+pip install django-cors-headers
+pip install transbank-sdk-python
+pip install pillow
+```
+
+4. Configurar la base de datos:
+```bash
+python manage.py migrate
+```
+
+5. Crear un superusuario (opcional):
+```bash
+python manage.py createsuperuser
+```
+
+### 3. Configuración del Frontend (React)
+
+1. Navegar al directorio del frontend:
+```bash
+cd frontend
+```
+
+2. Instalar dependencias:
+```bash
+npm install
+```
+
+## Ejecutar el Proyecto
+
+### Backend
+1. Asegúrate de que el entorno virtual esté activado
+2. En el directorio raíz del proyecto:
+```bash
+python manage.py runserver
+```
+El servidor backend estará disponible en `http://localhost:8000`
+
+### Frontend
+1. En el directorio `frontend`:
+```bash
+npm start
+```
+La aplicación frontend estará disponible en `http://localhost:3000`
+
+## Estructura del Proyecto
+
+- `/api` - Endpoints de la API REST
+- `/frontend` - Aplicación React
+- `/productos` - Módulo de gestión de productos
+- `/ventas` - Módulo de gestión de ventas
+- `/carritos` - Módulo de gestión de carritos de compra
+- `/pagos` - Integración con Transbank
+- `/compras` - Módulo de gestión de compras
+- `/proveedores` - Módulo de gestión de proveedores
+- `/categorias` - Módulo de gestión de categorías
+
+## Notas Importantes
+
+1. Asegúrate de tener todas las variables de entorno necesarias configuradas
+2. La base de datos SQLite se creará automáticamente al ejecutar las migraciones
+3. Para el funcionamiento de Transbank, necesitarás configurar las credenciales correspondientes
+
+## Soporte
+
+Si encuentras algún problema durante la instalación o ejecución del proyecto, por favor crea un issue en el repositorio.
