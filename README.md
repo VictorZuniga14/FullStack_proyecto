@@ -1,4 +1,4 @@
-# E-commerce Integration Project
+# E-commerce Full-Stack
 
 Este proyecto es una aplicación de e-commerce que integra un backend en Django con un frontend en React.
 
@@ -12,8 +12,6 @@ Este proyecto es una aplicación de e-commerce que integra un backend en Django 
 ## Configuración del Entorno
 
 ### 1. Clonar el Repositorio
-```bash
-git clone [URL_DEL_REPOSITORIO]
 cd EcomerceInteggracionfinal
 ```
 
